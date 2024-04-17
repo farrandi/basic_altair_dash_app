@@ -1,0 +1,22 @@
+name: "basic-altair-dash-app"
+channels:
+  - conda-forge
+  - r
+  - defaults
+dependencies:
+  - python=3.11.*
+  - pip
+  - ipykernel
+  - nb_conda_kernels
+  - otter-grader=5.2.2
+  - altair=5.1.2
+  - vl-convert-python # For saving altair charts as static images
+  - vegafusion # For working with charts > 5,000 graphical objects
+  - vegafusion-python-embed # Same as the previous one
+  - vegafusion-jupyter # For working with charts > 100,000 graphical objects
+  - vega_datasets # Altair example data
+  - matplotlib
+  - dash=2.16.*
+  - pip=24.0
+  - pip:
+      - dash-vega-components
